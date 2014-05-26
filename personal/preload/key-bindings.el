@@ -1,4 +1,4 @@
-;: multiple-cursors.el
+;; multiple-cursors.el
 ;; Experimental multiple-cursors
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
@@ -6,8 +6,8 @@
 
 ;; Mark additional regions matching current region
 ;(global-set-key (kbd "M-æ") 'mc/mark-all-dwim)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-.") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-,") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
 ;(global-set-key (kbd "C-Æ") 'mc/mark-more-like-this-extended)
 ;(global-set-key (kbd "M-å") 'mc/mark-all-in-region)
