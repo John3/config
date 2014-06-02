@@ -1,12 +1,21 @@
-;; multiple-cursors.el
+;;; key-binding.el --- Key bindings configuration
+;;
+;;
+;;; Commentary:
+;;
+;;
+;;; Code:
+
+;; multiple-cursors
+;; ===================
 ;;
 ;; Experimental multiple-cursors
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines) ;Adds one cursor to each line in the current region.
-(global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines) ;Adds a cursor at the end of each line in the current region.
-(global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines) ;Adds a cursor at the start of each line in the current region.
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines) ;; Adds one cursor to each line in the current region.
+(global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines) ;; Adds a cursor at the end of each line in the current region.
+(global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines) ;; Adds a cursor at the start of each line in the current region.
 
 ;; Mark additional regions matching current region
-;(global-set-key (kbd "M-æ") 'mc/mark-all-dwim)
+;;(global-set-key (kbd "M-æ") 'mc/mark-all-dwim)
 (global-set-key (kbd "C-.") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-,") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C->") 'mc/mark-all-like-this)
@@ -28,3 +37,5 @@
 ;(global-set-key (kbd "s-Æ") 'mc/mark-next-symbol-like-this)
 ;(global-set-key (kbd "M-s-Æ") 'mc/mark-all-symbols-like-this)
 ;; ==============================================================
+
+;;; key-bindings.el ends here
